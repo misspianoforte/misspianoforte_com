@@ -1,2 +1,4 @@
 name: Your New Jekyll Site
 pygments: true
+emoji_dir: ./images/emoji
+emoji_http_dir: /images/emoji
