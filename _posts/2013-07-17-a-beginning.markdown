@@ -7,6 +7,6 @@ categories: general
 
 Since we have finally made some mentionable progress on our game, I decided that a blog should be instantiated.
 
-More info soon to come...
+More info soon to come... :heart:
 
 -M
