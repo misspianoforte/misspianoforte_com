@@ -1,0 +1,12 @@
+---
+layout: default
+title: gallery
+---
+
+<div class="well">
+	<ul>
+	{% for img in site.galleryurl %}
+		<li><img src="{{ img.url }}" /></li>
+	{% endfor %}
+	</ul>
+</div>
