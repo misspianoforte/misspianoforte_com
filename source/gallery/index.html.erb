@@ -1,0 +1,9 @@
+<h1>galleries</h1>
+<% galleries.each do | name, files | %>
+	<h3><%= name.downcase %></h3>
+	<ul class="thumbnails">
+		<% files.each do |file| %>
+			<li class="span2"><img src='<%= "/files/galleries/#{name}/#{file}" %>' /></li>
+		<% end %>
+	</ul>
+<% end %>
