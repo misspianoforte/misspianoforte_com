@@ -6,7 +6,7 @@ GITHUB_REPONAME = "friesencr/teamfriesen_com"
 namespace :site do
   desc "Generate blog files"
   task :generate do
-    `bundle exec middleman build`
+    puts `bundle exec middleman build`
   end
 
 
