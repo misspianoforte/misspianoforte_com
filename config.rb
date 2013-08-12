@@ -7,6 +7,8 @@ helpers GalleryHelpers
 
 # Time.zone = "UTC"
 
+activate :directory_indexes
+
 activate :blog do |blog|
   blog.prefix = "blog"
   # blog.permalink = ":year/:month/:day/:title.html"
@@ -100,6 +102,8 @@ configure :build do
 
   # Minify html
   activate :minify_html
+
+  activate :gzip
   
   # Enable cache buster
   # activate :cache_buster

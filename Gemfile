@@ -8,8 +8,3 @@ gem "middleman-minify-html"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"
-
-if RUBY_PLATFORM =~ /win32|x64-mingw32/
-  gem "wdm"
-else
-end
