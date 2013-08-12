@@ -3,5 +3,6 @@ source "https://rubygems.org"
 
 gem 'gemoji'
 gem 'jekyll'
+gem 'rake'
 
 # gem "rails"
