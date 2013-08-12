@@ -10,9 +10,22 @@
 					<li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
 				<% end %>
 			</ol>
-
-		</ol>
-	</ol>
-</div>
+			<h3>tags</h3>
+			<ol>
+				<% blog.tags.each do |tag, articles| %>
+					<li><%= link_to tag, tag_path(tag) %> (<%= articles.size %>)</li>
+				<% end %>
+			</ol>
+				<% blog.articles.group_by {|y| y.date.year }.each do |year, articles| %>
+					<h3><%= year %></h3>
+					<% articles.group_by {|a| a.date.month }.each do |month, month_articles| %>
+						<ul>
+							<li><%= link_to month_articles.first.date.strftime("%b"), blog_month_path(year, month) %> (<%= month_articles.size %>)
+							</li>
+						</ul>
+					<% end %>
+				<% end %>
+			</div>
+	</div>
 <% end %>
 

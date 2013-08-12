@@ -3,7 +3,11 @@
 	<h3><%= name.downcase %></h3>
 	<ul class="thumbnails">
 		<% files.each do |file| %>
-			<li class="span2"><img src='<%= "/files/galleries/#{name}/#{file}" %>' /></li>
+			<li class="span2">
+				<% link_to("/files/galleries/#{name}/#{file}") do %>
+					<%= image_tag("/files/galleries/#{name}/#{file}") %>
+				<% end %>
+			</li>
 		<% end %>
 	</ul>
 <% end %>
