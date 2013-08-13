@@ -4,7 +4,6 @@ gem "middleman", "~> 3.1.4"
 gem "middleman-blog", "~> 3.2.0"
 gem "middleman-deploy"
 gem "middleman-minify-html"
-gem "wdm"
 gem 'therubyracer' # faster JS compiles
 gem 'oj' # faster JS compiles
 
