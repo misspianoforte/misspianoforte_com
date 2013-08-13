@@ -1,6 +1,6 @@
 ---
 title: The Factory
-date: 2013-08-13 18:46 UTC
+date: 2013-08-13 18:46:00
 tags: modeling
 ---
 
