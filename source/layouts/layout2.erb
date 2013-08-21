@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>team friesen - {{ page.title }}</title>
+<meta name="viewport" content="width=device-width">
+
+<link href="/stylesheets/all.css" rel="stylesheet" media="screen">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+</head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="/">team friesen</a>
+            <div class="nav-collapse collapse" id="main-menu">
+                <ul class="nav" id="main-menu-left">
+										<li><a href="/">home</a></li>
+                    <li><a href="/blog">blog</a></li>
+                    <li><a href="/gallery">gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="content" role="main">
+			<%= yield %>
+    </div>
+</div> <!-- /container -->
+
+<div class="main container">
+    <div class="footer row">
+			<div class="span4">
+			<h3>contact team friesen:</h3>
+			</div>
+			<div class="span3">
+				<h5>chris friesen</h5>
+				game programming<br />
+				<a href="http://github.com/friesencr/">github.com/friesencr</a><br />
+				<a href="http://twitter.com/chris__man">@chris__man</a>
+			</div>
+			<div class="span5">
+				<h5>marie friesen</h5>
+				3d modeling, rigging, animating<br />
+				<a href="http://twitter.com/misspianoforte">@misspianoforte</a>
+			</div>
+    </div>
+</div>
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+</body>
+</html>

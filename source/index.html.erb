@@ -1,32 +1,16 @@
----
-pageable: true
-per_page: 10
----
-<div id="home">
-	<h1>what's new</h1>
-		<% if paginate %>
-			<p>Page <%= page_number %> of <%= num_pages %></p>
+<div class="span9">
+<p class="lead">
+Welcome to Marie's Music Studio, where we offer private piano lessons and music for special occasions and social events.
+</p>
 
-			<% if prev_page %>
-				<p><%= link_to 'Previous page', prev_page %></p>
-			<% end %>
-		<% end %>
-		<div class="article well">
-			<% page_articles.each_with_index do |article, i| %>
-				<h3><%= link_to article.title, article %></h3>
-				<div class="article-meta">
-					<%= article.date.strftime('%b %e') %>
-				</div>
-				<div class="article-content">
-					<!-- use article.summary(250) if you have Nokogiri available to show just the first 250 characters -->
-					<%= article.body %>
-				</div>
-			<% end %>
-		</div>
+<p>
+The purpose of music is to express ourselves. Music is a language of direct emotional expression which, rather than being too vague for words, is actually too precise for words. As one of Marie's piano teachers, Dr. Paul Wirth, says, "If a picture is worth a thousand words, a melody is worth a million!" The goal of musicians is to develop the ability to speak this amazing language of music.
+</p>
 
-	<% if paginate %>
-		<% if next_page %>
-			<p><%= link_to 'Next page', next_page %></p>
-		<% end %>
-	<% end %>
+<p>
+Marie's goal in teaching you is to give you the best information that will help you progress at the highest pace you can in the time you have allotted to practice. It is also her goal to inspire you to do your best and enjoy your level of ability. Our work is to do the best we can with what we have. Marie is proud of every one of her students and does what she feels best for each and every one. Please be proud of yourselves and thankful for the gifts God has given you!
+</p>
+</div>
+<div class="span3">
+  <%=image_tag "block6.png" %>
 </div>

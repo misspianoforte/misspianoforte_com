@@ -1,7 +1,6 @@
 /*
  *= require bootstrap
  *= require bootstrap-responsive
+ *= require home
 */
 @charset "utf-8";
-
-body { padding-top: 100px; }
