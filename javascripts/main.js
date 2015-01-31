@@ -1,0 +1,1 @@
+(function(){$(function(){return $(".header .nav a").each(function(){var t;return t=$(this),t.parent().removeClass("selected"),t.attr("href")===window.location.pathname.toLowerCase()?t.parent().addClass("selected"):void 0})})}).call(this);
